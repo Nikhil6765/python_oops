@@ -15,12 +15,18 @@ while True:
     title=input("enter title of the movie : ")
     hero=input("enter hero of the movie : ")
     heroine=input("enter heroine of the movie : ")
+    
     m=movie(title,hero,heroine)
+    
     list_of_movies.append(m)
     print("movie added successfully")
     
     option=input("do you want to add more movies to the list [yes/no]")
     if option.lower()=='no':
         break
+
+for movie in list_of_movies:
+    movie.info()
+    print()
 
 
